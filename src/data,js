@@ -1,0 +1,25 @@
+const defaultData = {
+    general: {
+        name: "Sophia Johnson",
+        email: "sophia.johnson@example.com",
+        phoneNumber: "9876543210",
+        address: "123 Main Street, Anytown, USA",
+    },
+    education: {
+        schoolName: "Speedster Academy",
+        titleOfStudy: "Advanced Racing Techniques",
+        startDate: "2020/09/01",
+        endDate: "2024/06/30",
+        location: "Speedway City, USA",
+    },
+    experience: {
+        companyName: "Velocity Racing Inc.",
+        positionTitle: "Lead Formula 1 Driver",
+        description: "Achieved multiple victories and podium finishes.",
+        startDate: "2024/07/15",
+        endDate: "2025/12/31",
+        location: "Raceway Valley, USA",
+    }
+};
+
+export default defaultData

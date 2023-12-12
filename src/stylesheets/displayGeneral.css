@@ -1,0 +1,33 @@
+.general-section {
+    background-color: rgb(14, 55, 78);
+    padding: 40px 20px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+.general-info {
+    display: flex;
+    text-transform: capitalize;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.general-info>#display-email {
+    text-transform: lowercase;
+}
+
+.general-info>div {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}

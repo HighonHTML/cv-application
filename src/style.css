@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@600&family=Open+Sans&family=Poppins:wght@300;500&family=Roboto&display=swap');
+
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif; 
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e9ecef;
+}
+
+.app {
+    max-width: 1320px;
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+    padding: 32px 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.form-container {
+    width: 500px;
+}
+
+.resume-container {
+    background-color: white;
+    width: 800px;
+    height: 100vh;
+}
+
+/* form side */
+
+/* manage template */
+
+.form-container>div {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.manage-template {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.reset,
+.clear-resume {
+    width: 50%;
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.reset:hover,
+.clear-resume:hover {
+    cursor: pointer;
+}
+
+.reset {
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+.clear-resume {
+    background-color: white;
+    color: red;
+    /* for the trash svg */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* form component */
+
+.form-component {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-heading {
+    height: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-heading>h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.form-heading:hover {
+    cursor: pointer;
+}
+
+.break {
+    background-color: #e9ecef;
+    height: 5px;
+    width: 100%;
+    margin-top: 5px;
+    padding-left: 0;
+}
+
+/* expanded forms */
+
+.form-component>form {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    width: 100%;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-group>label {
+    font-weight: 500;
+}
+
+.input-group>input, textarea {
+    background-color: #e9ecef;
+    border: 1px solid #e9ecef;
+    padding: 8px;
+    width: 100%;
+}
+
+.duration{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn {
+    font-size: 14px;
+    padding: 8px;
+}
+.button-group{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.main-buttons{
+    display: flex;
+    gap: 10px;
+}
+.button-group button{
+   padding: 6px 12px;
+}
+
+/* cv section */
+
+.resume-container {}
+
+.inner-container {
+    /* padding: 0 50px; */
+}
