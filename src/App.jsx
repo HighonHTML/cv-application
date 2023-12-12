@@ -51,8 +51,6 @@ function App() {
     setExperienceData(defaultData.experience);
     setDisplayManager(defaultDisplayManager);
   }
-  console.log(educationData.dateOfStudy);
-  console.log(typeof educationData.dateOfStudy);
   const [displayManager, setDisplayManager] = useState(defaultDisplayManager);
   return (
     <div className="app">
