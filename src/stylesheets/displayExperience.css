@@ -4,7 +4,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+
 }
 h4{
     background-color: #f3f4f6;
@@ -21,7 +22,7 @@ h4{
     gap: 20px;
 }
 .left{
-    width: 50%;
+    min-width: 50%;
 }
 .right>p:nth-of-type(1){
     font-weight: 600;
