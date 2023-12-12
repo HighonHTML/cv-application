@@ -1,25 +1,26 @@
 const defaultData = {
     general: {
-        name: "Sophia Johnson",
-        email: "sophia.johnson@example.com",
+        name: "Roshan",
+        email: "roshan@example.com",
         phoneNumber: "9876543210",
         address: "123 Main Street, Anytown, USA",
     },
     education: {
-        schoolName: "Speedster Academy",
-        titleOfStudy: "Advanced Racing Techniques",
-        startDate: "2020/09/01",
-        endDate: "2024/06/30",
-        location: "Speedway City, USA",
+        schoolName: "VIT (Vellore Institute of Technology)",
+        titleOfStudy: "Mechanical Engineering",
+        startDate: "2015/09/01",
+        endDate: "2019/06/30",
+        location: "Vellore, India",
     },
     experience: {
-        companyName: "Velocity Racing Inc.",
-        positionTitle: "Lead Formula 1 Driver",
-        description: "Achieved multiple victories and podium finishes.",
-        startDate: "2024/07/15",
-        endDate: "2025/12/31",
-        location: "Raceway Valley, USA",
+        companyName: "Gearhead Innovations",
+        positionTitle: "Chief Engineer - Turbocharged Awesomeness",
+        description: "Led a team in the creation of vehicles that not only defy gravity but make unicorns envious. Responsibilities included fine-tuning engines to purr like content kittens, designing cars to outshine rainbows, and ensuring that every ride feels like a magic carpet journey. Also, had the incredible honor of teaching cars how to dance salsa.",
+        startDate: "2019/07/15",
+        endDate: "2023/12/31",
+        location: "Innovation Valley, Imaginaryland",
     }
 };
+
 
 export default defaultData
