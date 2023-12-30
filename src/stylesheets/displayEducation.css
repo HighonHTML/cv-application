@@ -23,8 +23,8 @@ h4 {
     gap: 20px;
 }
 
-.left {
-    min-width: 50%;
+.education-info>.left {
+    min-width: 40%;
 }
 
 .right>p:nth-of-type(1) {

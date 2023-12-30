@@ -21,9 +21,9 @@ h4{
     display: flex;
     gap: 20px;
 }
-.left{
-    min-width: 50%;
+.experience-info>.left{
+    min-width: 40%;
 }
-.right>p:nth-of-type(1){
+.experience-info>.right>p:nth-of-type(1){
     font-weight: 600;
 }

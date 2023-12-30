@@ -1,19 +1,39 @@
 import { useState } from "react";
-import ManageTemplate from "./Components/ManageTemplate";
+import "./style.css";
+import defaultData from "./data,js";
 import General from "./Components/General";
 import Education from "./Components/Education";
 import Experience from "./Components/Experience";
-import "./style.css";
-import DisplayEducation from "./Components/DisplayEducation";
+import EducationDemo from "./Components/Education-demo";
+import ManageTemplate from "./Components/ManageTemplate";
 import DisplayGeneral from "./Components/DisplayGeneral";
+import DisplayEducation from "./Components/DisplayEducation";
 import DisplayExperience from "./Components/DisplayExperience";
-import defaultData from "./data,js";
 
 const defaultDisplayManager = {
   displayGeneral: true,
   displayEducation: true,
   displayExperience: true,
 };
+const defaultEducationDataArray = [
+  {
+    schoolName: "VIT (Vellore Institute of Technology)",
+    titleOfStudy: "Mechanical Engineering",
+    startDate: "2015/09/01",
+    endDate: "2019/06/30",
+    location: "Vellore, India",
+    id: 1
+  },
+  {
+    schoolName: "VIT (Vellore Institute of Technology)",
+    titleOfStudy: "Mechanical Engineering",
+    startDate: "2015/09/01",
+    endDate: "2019/06/30",
+    location: "Vellore, India",
+    id: 2
+  }
+  
+];
 
 function App() {
   const [generalData, setGeneralData] = useState(defaultData.general);
@@ -21,6 +41,7 @@ function App() {
     setGeneralData({ ...generalData, [e.target.name]: e.target.value });
     setDisplayManager({ ...displayManager, displayGeneral: true });
   }
+  const [educationDataArray, setEducationDataArray] = useState("");
   const [educationData, setEducationData] = useState(defaultData.education);
   function handleEducationDataChange(e) {
     setEducationData({ ...educationData, [e.target.name]: e.target.value });
@@ -51,11 +72,20 @@ function App() {
     setExperienceData(defaultData.experience);
     setDisplayManager(defaultDisplayManager);
   }
+  function handleEducationArrayDataChange(){
+
+  }
   const [displayManager, setDisplayManager] = useState(defaultDisplayManager);
   return (
     <div className="app">
       <div className="form-container">
         <ManageTemplate clearForm={clearForm} resetForm={resetForm} />
+        <EducationDemo
+          isActive={true}
+          className='education-demo form-component'
+          educationData={defaultEducationDataArray}
+          handleChange={handleEducationArrayDataChange}
+        ></EducationDemo>
         <General
           isActive={activeId === 0}
           handleActiveIdChange={handleActiveIdChange}
