@@ -9,11 +9,14 @@ export default function General({
   generalData,
   handleChange,
 }) {
+  function handleTitleClick(){
+    isActive ? handleActiveIdChange(null) : handleActiveIdChange(0)
+  }
   return (
     <div className={className}>
       <div className="form-heading">
         <FontAwesomeIcon icon={faUser} />
-        <h3 onClick={() => handleActiveIdChange(0)}>Personal Details</h3>
+        <h3 onClick={handleTitleClick}>Personal Details</h3>
       </div>
       {isActive ? (
         <>

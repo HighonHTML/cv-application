@@ -13,11 +13,14 @@ export default function Experience({
     e.target.reset();
     e.preventDefault();
   }
+  function handleTitleClick(){
+    isActive ? handleActiveIdChange(null) : handleActiveIdChange(2)
+  }
   return (
     <div className={className}>
       <div className="form-heading">
         <FontAwesomeIcon icon={faBriefcase} />
-        <h3 onClick={() => handleActiveIdChange(2)}>Experience</h3>
+        <h3 onClick={handleTitleClick}>Experience</h3>
       </div>
       {isActive ? (
         <>

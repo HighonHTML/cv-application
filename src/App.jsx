@@ -1,12 +1,12 @@
 import { useState } from "react";
-import ManageTemplate from "./Components/ManageTemplate";
-import General from "./Components/General";
-import Education from "./Components/Education";
-import Experience from "./Components/Experience";
+import ManageTemplate from "./Components/leftSide/ManageTemplate";
+import General from "./Components/leftSide/General";
+import Education from "./Components/leftSide/Education";
+import Experience from "./Components/leftSide/Experience";
 import "./style.css";
-import DisplayEducation from "./Components/DisplayEducation";
-import DisplayGeneral from "./Components/DisplayGeneral";
-import DisplayExperience from "./Components/DisplayExperience";
+import DisplayEducation from "./Components/rightSide/DisplayEducation";
+import DisplayGeneral from "./Components/rightSide/DisplayGeneral";
+import DisplayExperience from "./Components/rightSide/DisplayExperience";
 import defaultData from "./data,js";
 
 const defaultDisplayManager = {

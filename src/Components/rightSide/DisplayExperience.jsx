@@ -1,4 +1,4 @@
-import "../stylesheets/displayExperience.css";
+import "../../stylesheets/displayExperience.css";
 export default function DisplayExperience({ experienceData }) {
   return (
     <div className="experience-section">

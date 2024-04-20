@@ -1,4 +1,4 @@
-import '../stylesheets/displayEducation.css'
+import '../../stylesheets/displayEducation.css'
 export default function DisplayEducation({educationData}){
     return(
         <div className="education-section">

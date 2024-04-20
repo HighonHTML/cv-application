@@ -9,11 +9,14 @@ export default function Education({
   educationData,
   handleChange,
 }) {
+  function handleTitleClick(){
+    isActive ? handleActiveIdChange(null) : handleActiveIdChange(1)
+  }
   return (
     <div className={className}>
       <div className="form-heading">
         <FontAwesomeIcon icon={faGraduationCap} />
-        <h3 onClick={() => handleActiveIdChange(1)}>Education Details</h3>
+        <h3 onClick={handleTitleClick}>Education Details</h3>
       </div>
       {isActive ? (
         <>
